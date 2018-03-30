@@ -38,12 +38,14 @@ function viewCart() {
 function total() {
   // write your code here
   var total = cart.reduce((total, item) => total += item.itemPrice, 0);
-  console.log(total);
+  //console.log(total);
   return total;
 }
 
 function removeFromCart(item) {
   // write your code here
+  // cart = cart.filter(elem => elem.itemName !== 'item');
+  return cart.filter(elem => elem.itemName !== 'item');
 }
 
 function placeOrder(cardNumber) {
