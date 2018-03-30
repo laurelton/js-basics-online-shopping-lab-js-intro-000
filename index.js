@@ -31,9 +31,17 @@ function viewCart() {
   //   }
   // }
   // msg += '.';
-  var msg = '';
+  if (cart.length === 0) {
+    return 'Your shopping cart is empty.';
+  }
 
-  return cart.length === 0 ? 'Your shopping cart is empty.' : msg;
+  var msg = 'In your cart, you have ';
+  if (cart.length === 1) {
+    return msg + `${cart[0].itemName} at $${cart[0].itemPrice}.`;
+  }
+  
+  
+  return msg + '.';
 }
 
 function total() {
