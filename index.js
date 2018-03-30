@@ -39,8 +39,8 @@ function viewCart() {
   if (cart.length === 1) {
     return msg + `${cart[0].itemName} at $${cart[0].itemPrice}.`;
   }
-  
-  
+
+
   return msg + '.';
 }
 
