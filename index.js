@@ -49,7 +49,7 @@ function removeFromCart(item) {
   }
 
   return cart.filter(function(elem) {
-    return elem.itemName !== item;
+    return elem.itemName === item;
   });
 }
 
