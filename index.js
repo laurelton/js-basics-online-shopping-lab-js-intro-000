@@ -48,7 +48,9 @@ function removeFromCart(item) {
     return 'That item is not in your cart.';
   }
 
-  return cart.filter(elem => elem.itemName !== item);
+  return cart.filter(function(elem) {
+    return elem.itemName !== item;
+  });
 }
 
 function placeOrder(cardNumber) {
