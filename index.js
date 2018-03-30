@@ -44,7 +44,7 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
-  // cart = cart.filter(elem => elem.itemName !== 'item');
+  // var newCart = cart.filter(elem => elem.itemName !== 'item');
   return cart.filter(elem => elem.itemName !== 'item');
 }
 
