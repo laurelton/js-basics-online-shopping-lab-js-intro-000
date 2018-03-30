@@ -44,10 +44,11 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
-  if ()
-  cart = cart.filter(elem => elem.itemName !== 'item');
+  if (!cart.some(elem => elem.itemName === item)) {
+    return 'That item is not in your cart.';
+  }
 
-  return cart;
+  return cart.filter(elem => elem.itemName !== item);
 }
 
 function placeOrder(cardNumber) {
