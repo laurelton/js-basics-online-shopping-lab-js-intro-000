@@ -47,10 +47,8 @@ function removeFromCart(item) {
   if (!cart.some(elem => elem.itemName === item)) {
     return 'That item is not in your cart.';
   }
-
-  return cart.filter(function(elem) {
-    return elem.itemName === item;
-  });
+  cart = cart.filter(elem => elem.itemName !== item);
+  return cart;
 }
 
 function placeOrder(cardNumber) {
