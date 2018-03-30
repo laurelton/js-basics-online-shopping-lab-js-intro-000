@@ -22,15 +22,15 @@ function addToCart(item) {
 
 function viewCart() {
   // write your code here
-  var msg = 'In your cart, you have';
-  for (let i = 0; i < cart.length; i++) {
-    if (i === cart.length - 1 && cart.length > 1) {
-      msg += ` and ${cart[i].itemName} at $${cart[i].itemPrice}`;
-    } else {
-      msg += ` ${cart[i].itemName} at $${cart[i].itemPrice},`;
-    }
-  }
-  msg += '.';
+  // var msg = 'In your cart, you have';
+  // for (let i = 0; i < cart.length; i++) {
+  //   if (i === cart.length - 1 && cart.length > 1) {
+  //     msg += ` and ${cart[i].itemName} at $${cart[i].itemPrice}`;
+  //   } else {
+  //     msg += ` ${cart[i].itemName} at $${cart[i].itemPrice},`;
+  //   }
+  // }
+  // msg += '.';
 
   return cart.length === 0 ? 'Your shopping cart is empty.' : msg;
 }
