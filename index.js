@@ -44,8 +44,10 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
-  // var newCart = cart.filter(elem => elem.itemName !== 'item');
-  return cart.filter(elem => elem.itemName !== 'item');
+  if ()
+  cart = cart.filter(elem => elem.itemName !== 'item');
+
+  return cart;
 }
 
 function placeOrder(cardNumber) {
