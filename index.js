@@ -31,6 +31,7 @@ function viewCart() {
   //   }
   // }
   // msg += '.';
+  var msg = '';
 
   return cart.length === 0 ? 'Your shopping cart is empty.' : msg;
 }
